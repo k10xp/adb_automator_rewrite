@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';"
+      content="
+  default-src 'self';
+  script-src 'self';
+  style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+  font-src 'self' https://fonts.gstatic.com;
+  img-src 'self' data:;
+  connect-src 'self';
+"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono:400,700&display=swap"
@@ -35,13 +42,11 @@
               <label><input type="checkbox" /> Send SMS</label>
             </div>
           </div>
-          <div class="left-buttons-container">
-            <button class="button button-primary" onclick="runCommands()">
+          <div>
+            <button id="runCommandsBtn" class="button button-primary">
               Run Commands
             </button>
-            <button class="button button-secondary" onclick="showHelp()">
-              Help
-            </button>
+            <button id="helpBtn" class="button button-secondary">Help</button>
           </div>
         </div>
         <div class="right">

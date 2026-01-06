@@ -5,8 +5,6 @@ function runCommands() {
     '.commands-checkbox-container input[type="checkbox"]'
   );
 
-  //append, always in commands list order
-  //ie Screen On is always 1st
   const lines = [];
   checkboxes.forEach((cb) => {
     if (cb.checked) {
@@ -15,7 +13,6 @@ function runCommands() {
     }
   });
 
-  //show on R panel
   if (lines.length === 0) {
     lines.push("No commands selected.");
   }
@@ -31,3 +28,16 @@ function runCommands() {
 function showHelp() {
   alert('Select commands, then click "Run Commands" to run them.');
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+  const runBtn = document.getElementById("runCommandsBtn");
+  const helpBtn = document.getElementById("helpBtn");
+
+  if (runBtn) {
+    runBtn.addEventListener("click", runCommands);
+  }
+
+  if (helpBtn) {
+    helpBtn.addEventListener("click", showHelp);
+  }
+});
