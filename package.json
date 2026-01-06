@@ -1,12 +1,12 @@
 {
   "name": "adb_automator_rewrite",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://my.project.homepage",
   "author": {
-    "name": "My Name",
-    "email": "email@email.com"
+    "name": "Placeholder Name",
+    "email": "placeholder@email.com"
   },
+  "description": "Placeholder description",
+  "homepage": "https://my.project.homepage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,8 +27,8 @@
     "electron-builder": "^25.0.0"
   },
   "build": {
-    "appId": "com.example.frontend-gui",
-    "productName": "Frontend GUI",
+    "appId": "com.example.adb-automator-rewrite",
+    "productName": "ADB Automator Rewrite",
     "files": [
       "index.js",
       "dist/**/*",
@@ -38,14 +38,17 @@
       "buildResources": "build"
     },
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "placeholder.png"
     },
     "mac": {
-      "target": "dmg"
+      "target": "dmg",
+      "icon": "placeholder.png"
     },
     "linux": {
       "target": "deb",
-      "category": "Utility"
+      "category": "Utility",
+      "icon": "placeholder.png"
     }
   }
 }

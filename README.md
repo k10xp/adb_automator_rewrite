@@ -1,5 +1,7 @@
 # ADB Automator Rewrite
 
+Rewrite https://github.com/k10xp/adb-automator from Python to JavaScript ecosystem.
+
 ## Setup
 
 Install dependencies before starting development or building:
@@ -16,26 +18,12 @@ Start the development server with hot reload:
 npm run dev
 ```
 
-## Build
+## Build GUI application
 
 Create a production build:
 
 ```shell
-npm run build
-```
-
-## Preview
-
-Serve the production build locally:
-
-```shell
-npm run preview
-```
-
-## Electron
-
-```shell
-npm run dev:electron
+npm run dist
 ```
 
 ## Based on design
