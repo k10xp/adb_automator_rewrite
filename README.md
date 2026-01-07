@@ -18,6 +18,24 @@ Start the development server with hot reload:
 npm run dev
 ```
 
+### Tests
+
+UI tests with playwright
+
+Run following in separate terminals
+
+1. run frontend only vite application
+
+```shell
+npm run dev:vite
+```
+
+2. run playwright tests
+
+```shell
+npx playwright test
+```
+
 ## Build GUI application
 
 Create a production build:
@@ -25,6 +43,8 @@ Create a production build:
 ```shell
 npm run dist
 ```
+
+You need to replace `"icon": "placeholder.png"` with app icon image in `package.json`. Must be >= 256 x 256 pixels.
 
 ## Based on design
 

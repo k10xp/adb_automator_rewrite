@@ -9,7 +9,7 @@
   "homepage": "https://my.project.homepage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:fe": "npx playwright test",
     "fmt": "npx prettier --write .",
     "dev:vite": "vite",
     "build:vite": "vite build",
@@ -20,11 +20,12 @@
   "keywords": [],
   "license": "ISC",
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
     "concurrently": "^9.2.1",
     "electron": "^39.2.7",
+    "electron-builder": "^25.0.0",
     "prettier": "^3.7.4",
-    "vite": "^7.3.0",
-    "electron-builder": "^25.0.0"
+    "vite": "^7.3.0"
   },
   "build": {
     "appId": "com.example.adb-automator-rewrite",
